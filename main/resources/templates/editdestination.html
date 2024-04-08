@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Destination</title>
+</head>
+
+<body>
+    <h1>Edit Destination</h1>
+    <form action="/destinations/edit/{id}" method="post" th:object="${destination}">
+        <input type="hidden" th:field="*{id}">
+        <label for="destName">Destination Name:</label>
+        <input type="text" id="destName" name="destName" th:field="*{destName}" required><br>
+        <label for="destDescription">Destination Description:</label>
+        <input type="text" id="destDescription" name="destDescription" th:field="*{destDescription}" required><br>
+        <button type="submit">Save Changes</button>
+    </form>
+</body>
+
+</html>

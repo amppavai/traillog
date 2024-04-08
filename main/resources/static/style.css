@@ -1,0 +1,174 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --orange: #ffa500;
+}
+
+tähti {
+    font-family: "Nunito Sans", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+tähti::selection{
+    background-color: var(--orange);
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo span {
+    color: var(--orange);
+}
+
+header .navbar a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 .8rem;
+}
+
+header .navbar a:hover {
+    color: var(--orange);
+}
+
+header .icons i {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+header .icons i:hover {
+    color: var(--orange);
+} 
+
+header .search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background: #333;
+    border-top: .1rem solid rgba(255,255,255,.2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+}
+
+header .search-bar-container.active {
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0);
+}
+
+
+header .search-bar-container #search-bar {
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color:#333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+
+header .search-bar-container label {
+    color:#fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+    color: var(--orange);
+}
+
+body {
+    height: 200rem;
+
+}
+
+.login-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container form {
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    width: 50rem;
+}
+
+.login-form-container form h3 {
+    font-size: 3rem;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.login-form-container form .box {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: .6rem 0;
+    border: 1rem solid tgba(0,0,0,.3);
+    
+} */
+
+.profile-head {
+    transform: translateY(5rem)
+}
+
+.cover {
+    background-image: url(https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+body {
+    background: #654ea3;
+    background: linear-gradient(to right, #e96443, #904e95);
+    min-height: 100vh;
+    overflow-x:hidden;
+}

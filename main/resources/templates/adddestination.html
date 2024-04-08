@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Destination</title>
+</head>
+
+<body>
+    <h1>Add Destination</h1>
+    <form action="/destinations/add" method="post" th:object="${destination}">
+        <label for="destName">Destination Name:</label>
+        <input type="text" id="destName" name="destName" th:field="*{destName}" required><br>
+        <label for="destDescription">Destination Description:</label>
+        <input type="text" id="destDescription" name="destDescription" th:field="*{destDescription}" required><br>
+        <button type="submit">Add Destination</button>
+    </form>
+</body>
+
+</html>
